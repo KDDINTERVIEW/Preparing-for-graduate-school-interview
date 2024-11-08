@@ -391,6 +391,12 @@
 <summary><a href="./answers/5-network.md"><strong>🌐 네트워크</strong></a></summary>
 
 - TCP/IP의 각 계층을 설명해주세요.
+```python
+   L1: 네트워크 엑세스 계층 - 실제 데이터 전송이 이루어지는 물리적인 계층 (이더넷, Wi-Fi 등의 네트워크 인터페이스로 전달)
+   L2: 인터넷 계층 - 데이터 패킷을 목적지까지 전달하는 역할(IP 프로토콜 사용)
+   L3: 전송 계층 - 데이터의 신뢰성 보장하는 계층(TCP와 UDP 프로토콜 사용)
+   L4: 응용 계층 - 웹 브라우저, 이메일 등 사용자와 직접 상호 작용하는 애플리케이션 있는 계층(HTTP, FTP 프로토콜 사용)
+```
 - OSI 7계층와 TCP/IP 계층의 차이를 설명해주세요.
 - Frame, Packet, Segment, Datagram을 비교해주세요.
 - TCP와 UDP의 차이를 설명해주세요.
