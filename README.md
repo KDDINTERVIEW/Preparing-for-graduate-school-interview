@@ -314,7 +314,11 @@
 ```
 - Tensorflow, PyTorch 특징과 차이가 뭘까요?
 ```python
-     
+   TensorFlow: 정적 그래프 기반으로 처음 설계되었지만, TensorFlow 2.x부터는 Eager Execution을 통해 동적 그래프를 지원한다다. 다만 여전히 대규모 프로젝트나 배포 시 정적 그래프 모드를 사용하는 경우가 많다.
+   PyTorch: 처음부터 동적 그래프를 사용하여 그래프가 즉시 생성되고 실행된다. 이로 인해 코드 작성이 유연하고 디버깅이 용이하다.
+
+   TensorFlow: TensorFlow는 TPU(구글의 AI 가속기) 지원이 강력하며, 대규모 분산 훈련 및 최적화에 유리하다. 특히 대규모 데이터셋을 처리할 때 성능 최적화가 잘 되어 있다.
+   PyTorch: GPU 지원이 강력하며, 다양한 커스터마이징이 쉬워 연구 및 실험에 적합하다. PyTorch도 최근 TPU를 지원하기 시작했지만, TPU 최적화 측면에서는 아직 TensorFlow가 유리하다.
 ```
 - Data Normalization은 무엇이고 왜 필요한가요?
 ```python
