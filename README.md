@@ -16,6 +16,20 @@
   반대로, 2차 이상의 함수, 삼각 함수 등은 비선형함수
 ```
 
+- 선형 독립과 선형 종속에 대해서 설명하세요.
+```python
+  <선형 독립>
+  - 벡터 방정식이 trivial solution(자명해)만 갖고 있는 경우 (모든 가중치가 0인경우)
+  - trivial solution만 있으면 linearly independent
+  - trivial solution만 존재한다는 의미는 free variable이 없다는 의미
+  - 이 경우 행렬의 Rank는 column의 수와 같아져서 Rank=𝑛
+
+  <선형 종속>
+  - 벡터 방정식 c1v1+...+cpvp = 0이면 가중치 c1,...cp 중 하나라도 nonzero 
+  - nontrivial solution이면 free variable이 있다는 의미
+  - 이 경우 행렬의 Rank는 column 수보다 작아져서 Rank<𝑛
+```
+
 - 고유값(eigen value)와 고유벡터(eigen vector)이 무엇이고 왜 중요한지 설명해주세요.
 ```python
   행렬 A의 고유벡터는, 행렬 A에 의해 변환되었을 때 방향이 변하지 않고 단지 크기만 변하는 벡터를 말한다
