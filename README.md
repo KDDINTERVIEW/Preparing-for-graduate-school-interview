@@ -399,50 +399,121 @@
 ```
 - 볼츠만 머신은 무엇인가요?
 ```python
-     
+    볼츠만 머신은 딥러닝이 한참 입에 오르내리기 전, 표현 학습 (Representation Learning)의 선조격 역할을 한 확률 모형이다
+    에너지/엔트로피 개념을 비지도 학습과 융합
+    상기 분류/회귀 모델은 추론 결과와 이미 알려져 있는 정답간의 차이를 줄이는 데 목표를 두지만, 볼츠만 머신은 생성 모델의 일종으로
+    정답에 대한 확률 분포를 추정하는 비지도학습 모델이다!
 ```
 
-
-- TF, PyTorch 등을 사용할 때 디버깅 노하우는?
+- 뉴럴넷의 가장 큰 단점은 무엇인가? 이를 위해 나온 One-Shot Learning은 무엇인가?
+```python
+   뉴럴넷의 단점, 신경망은 많은 데이터가 있어야 한다. 그래야 일반화 성능이 높아진다
+   데이터가 충분하지 않으면 과적합이 되어 새로운 데이터에 대한 성능이 저하된다
+   이러한 단점을 극복하기 위해 나온 것이 one-shot learning이다
+   One-shot learning은 매우 적은 적은 데이터만으로도 학습을 진행할 수 있는 기법을 의미한다
+   One-shot learning의 핵심 아이디어
+   1. 사전 학습된 특성 사용 : 모델이 미리 학습한 특성을 사용하여 새로운 클래스에 대해 빠르게 적응할 수 있도록 한다
+   2. 거리 기반 학습 : 새로운 샘플이 주어지면 기존에 학습한 샘플과의 거리를 측정하여 유사한 클래스를 찾는 방식으로 학습한다
+   3. 메타 러닝 : 모델이 학습하는 방법 자체를 학습하여 새로운 과제에 빠르게 적응하도록 하는 접근법이다
+     
+```
+- 요즘 Sigmoid 보다 ReLU를 많이 쓰는데 그 이유는?
 ```python
      
 ```
-- 뉴럴넷의 가장 큰 단점은 무엇인가? 이를 위해 나온 One-Shot Learning은 무엇인가?
-- 요즘 Sigmoid 보다 ReLU를 많이 쓰는데 그 이유는?
   - Non-Linearity라는 말의 의미와 그 필요성은?
+  ```python
+     
+  ```
   - ReLU로 어떻게 곡선 함수를 근사하나?
+  ```python
+     
+  ```
   - ReLU의 문제점은?
+  ```python
+     
+  ```
   - Bias는 왜 있는걸까?
+  ```python
+     
+  ```
 - Gradient Descent에 대해서 쉽게 설명한다면?
-  - 왜 꼭 Gradient를 써야 할까? 그 그래프에서 가로축과 세로축 각각은 무엇인가? 실제 상황에서는 그 그래프가 어떻게 그려질까?
+```python
+     
+```
   - GD 중에 때때로 Loss가 증가하는 이유는?
+  ```python
+     
+  ```
   - Back Propagation에 대해서 쉽게 설명 한다면?
+  ```python
+     
+  ```
 - Local Minima 문제에도 불구하고 딥러닝이 잘 되는 이유는?
+```python
+     
+```
   - GD가 Local Minima 문제를 피하는 방법은?
+  ```python
+     
+  ```
   - 찾은 해가 Global Minimum인지 아닌지 알 수 있는 방법은?
+  ```python
+     
+  ```
 - Training 세트와 Test 세트를 분리하는 이유는?
+```python
+     
+```
   - Validation 세트가 따로 있는 이유는?
+  ```python
+     
+  ```
   - Test 세트가 오염되었다는 말의 뜻은?
+  ```python
+     
+  ```
   - Regularization이란 무엇인가?
+  ```python
+     
+  ```
 - Batch Normalization의 효과는?
+```python
+     
+```
   - Dropout의 효과는?
-  - BN 적용해서 학습 이후 실제 사용시에 주의할 점은? 코드로는?
+  ```python
+     
+  ```
+  - BN 적용해서 학습 이후 실제 사용시에 주의할 점은?
+  ```python
+     
+  ```
   - GAN에서 Generator 쪽에도 BN을 적용해도 될까?
+  ```python
+     
+  ```
 - SGD, RMSprop, Adam에 대해서 아는대로 설명한다면?
+```python
+     
+```
   - SGD에서 Stochastic의 의미는?
+  ```python
+     
+  ```
   - 미니배치를 작게 할때의 장단점은?
+  ```python
+     
+  ```
   - 모멘텀의 수식을 적어 본다면?
-- 간단한 MNIST 분류기를 MLP+CPU 버전으로 numpy로 만든다면 몇줄일까?
-  - 어느 정도 돌아가는 녀석을 작성하기까지 몇시간 정도 걸릴까?
-  - Back Propagation은 몇줄인가?
-  - CNN으로 바꾼다면 얼마나 추가될까?
-- 간단한 MNIST 분류기를 TF, PyTorch 등으로 작성하는데 몇시간이 필요한가?
-  - CNN이 아닌 MLP로 해도 잘 될까?
-  - 마지막 레이어 부분에 대해서 설명 한다면?
-  - 학습은 BCE loss로 하되 상황을 MSE loss로 보고 싶다면?
-- 딥러닝할 때 GPU를 쓰면 좋은 이유는?
-  - GPU를 두개 다 쓰고 싶다. 방법은?
-  - 학습시 필요한 GPU 메모리는 어떻게 계산하는가?
+  ```python
+     
+  ```
+
+- CNN, RNN, LSTM, GRU, tranformer (self-attention)에 대해 설명하시오!
+```python
+     
+```
 
 </details>
 
@@ -457,60 +528,8 @@
    L3: 전송 계층 - 데이터의 신뢰성 보장하는 계층(TCP와 UDP 프로토콜 사용)
    L4: 응용 계층 - 웹 브라우저, 이메일 등 사용자와 직접 상호 작용하는 애플리케이션 있는 계층(HTTP, FTP 프로토콜 사용)
 ```
-- OSI 7계층와 TCP/IP 계층의 차이를 설명해주세요.
-- Frame, Packet, Segment, Datagram을 비교해주세요.
-- TCP와 UDP의 차이를 설명해주세요.
-- TCP와 UDP의 헤더를 비교해주세요.
-- TCP의 3-way-handshake와 4-way-handshake를 비교 설명해주세요.
-- TCP의 연결 설정 과정(3단계)과 연결 종료 과정(4단계)이 단계가 차이나는 이유가 무엇인가요?
-- 만약 Server에서 FIN 플래그를 전송하기 전에 전송한 패킷이 Routing 지연이나 패킷 유실로 인한 재전송 등으로 인해 FIN 패킷보다 늦게 도착하는 상황이 발생하면 어떻게 될까요?
-- 초기 Sequence Number인 ISN을 0부터 시작하지 않고 난수를 생성해서 설정하는 이유가 무엇인가요?
-- HTTP와 HTTPS에 대해서 설명하고 차이점에 대해 설명해주세요.
-- HTTP 요청/응답 헤더의 구조를 설명해주세요.
-- HTTP와 HTTPS 동작 과정을 비교해주세요.
-- CORS가 무엇인가요?
-- HTTP GET과 POST 메서드를 비교/설명해주세요.
-- 쿠키(Cookie)와 세션(Session)을 설명해주세요.
-- DNS가 무엇인가요?
-- REST와 RESTful의 개념을 설명하고 차이를 말해주세요.
-- 소켓(Socket)이 무엇인가요? 자신 있는 언어로 간단히 소켓 생성 예시를 보여주세요.
-- Socket.io와 WebSocket의 차이를 설명해주세요.
-- IPv4와 IPv6 차이를 설명해주세요.
-- MAC Address가 무엇인가요?
-- 라우터와 스위치, 허브의 차이를 설명해주세요.
-- SMTP가 무엇인가요?
-- 노트북으로 `www.google.com`에 접속을 했습니다. 요청을 보내고 받기까지의 과정을 자세히 설명해주세요.
-- 여러 네트워크 topology에 대해 간단히 소개해주세요.
-- subnet mask에 대해서 설명해주세요.
-- data encapsulation이 무엇인가요?
-- DHCP를 설명해주세요.
-- routing protocol을 몇 가지 설명해주세요. (ex. link state, distance vector)
-- 이더넷(ethernet)이 무엇인가요?
-- client와 server의 차이점을 설명해주세요.
-- delay, timing(jitter), throughput 차이를 설명해주세요.
-
 </details>
 
-<details>
-<summary><a href="./answers/6-operating-system.md"><strong>🖥️ 운영체제</strong></a></summary>
-
-- 프로세스와 스레드의 차이(Process vs Thread)를 알려주세요.
-- 멀티 프로세스 대신 멀티 스레드를 사용하는 이유를 설명해주세요.
-- 캐시의 지역성에 대해 설명해주세요.
-- Thread-safe에 대해 설명해주세요. (hint: critical section)
-- 뮤텍스와 세마포어의 차이를 설명해주세요.
-- 스케줄러가 무엇이고, 단기/중기/장기로 나누는 기준에 대해 설명해주세요.
-- CPU 스케줄러인 FCFS, SJF, SRTF, Priority Scheduling, RR에 대해 간략히 설명해주세요.
-- 동기와 비동기의 차이를 설명해주세요.
-- 메모리 관리 전략에는 무엇이 있는지 간략히 설명해주세요.
-- 가상 메모리에 대해 설명해주세요.
-- 교착상태(데드락, Deadlock)의 개념과 조건을 설명해주세요.
-- 사용자 수준 스레드와 커널 수준 스레드의 차이를 설명해주세요.
-- 외부 단편화와 내부 단편화에 대해 설명해주세요.
-- Context Switching이 무엇인지 설명하고 과정을 나열해주세요.
-- Swapping에 대해 설명해주세요.
-
-</details>
 
 <details>
 <summary><a href="./answers/7-data-structure.md"><strong>🗂 자료구조</strong></a></summary>
