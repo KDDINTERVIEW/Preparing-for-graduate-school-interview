@@ -6,29 +6,7 @@
 
 <details>
 <summary><a href="./answers/1-statistics-math.md"><strong>📈 통계/수학</strong></a></summary>
-  
-- 선형대수에서 선형과 비선형에 대해 설명해주세요.
-```python
-  선형(Linear)이란 집합 A의 원소들에 대하여 각각 선형결합의 형태로 나타낼 수 있는 것
-  즉, 집합 A의 원소 x1, x2, x3, ... xn에 대하여 각각 상수 a1, a2, a3, ..., an을 곱하여 더한 a1x1 + a2x2 + ... + anxn이 집합 A에 속하는 경우를 말함
 
-  1차함수와 벡터 등은 선형을 나타내는 선형함수
-  반대로, 2차 이상의 함수, 삼각 함수 등은 비선형함수
-```
-
-- 선형 독립과 선형 종속에 대해서 설명하세요.
-```python
-  <선형 독립>
-  - 벡터 방정식이 trivial solution(자명해)만 갖고 있는 경우 (모든 가중치가 0인경우)
-  - trivial solution만 있으면 linearly independent
-  - trivial solution만 존재한다는 의미는 free variable이 없다는 의미
-  - 이 경우 행렬의 Rank는 column의 수와 같아져서 Rank=𝑛
-
-  <선형 종속>
-  - 벡터 방정식 c1v1+...+cpvp = 0이면 가중치 c1,...cp 중 하나라도 nonzero 
-  - nontrivial solution이면 free variable이 있다는 의미
-  - 이 경우 행렬의 Rank는 column 수보다 작아져서 Rank<𝑛
-```
 
 - 고유값(eigen value)와 고유벡터(eigen vector)이 무엇이고 왜 중요한지 설명해주세요.
 ```python
@@ -776,15 +754,17 @@
 - 선형 독립과 선형 종속에 대해서 설명하세요.
 ```python
   <선형 독립>
-  - 벡터 방정식이 trivial solution(자명해)만 갖고 있는 경우 (모든 가중치가 0인경우)
-  - trivial solution만 있으면 linearly independent
-  - trivial solution만 존재한다는 의미는 free variable이 없다는 의미
-  - 이 경우 행렬의 Rank는 column의 수와 같아져서 Rank=𝑛
+  벡터 집합이 선형 독립이라는 것은, 집합에 포함된 어떠한 벡터도 다른 벡터들의 선형 조합으로 표현될 수 없다는 것을 의미한다.
+  쉽게 말해: 벡터들이 선형 독립이라면, 그들 중 어느 벡터도 나머지 벡터들의 선형 조합으로 만들어질 수 없다
+  의미: 선형 독립인 벡터들은 각기 다른 독립된 방향을 가리키며, 이 벡터들로 이루어진 공간에서 그 이상의 정보나 방향을 제공하지 않는 중복된 벡터가 포함되지 않았음을 나타낸다
+ 
+  벡터 집합이 선형 종속이라는 것은, 집합에 포함된 적어도 하나의 벡터가 다른 벡터들의 선형 조합으로 표현될 수 있다는 의미이다.
+  쉽게 말해: 벡터들이 선형 종속이라면, 어떤 벡터는 다른 벡터들의 선형 조합으로 만들어질 수 있다. 즉, 벡터 중 하나 이상이 다른 벡터에 의해 표현 가능한 중복된 정보나 방향을 제공한다.
+  의미: 선형 종속인 벡터들은 독립적인 방향을 가지지 않으며, 공간에서 중복된 방향을 제공하는 벡터가 포함되어 있음을 나타낸다
 
-  <선형 종속>
-  - 벡터 방정식 c1v1+...+cpvp = 0이면 가중치 c1,...cp 중 하나라도 nonzero 
-  - nontrivial solution이면 free variable이 있다는 의미
-  - 이 경우 행렬의 Rank는 column 수보다 작아져서 Rank<𝑛
+  왜 이 개념이 중요?
+  선형 독립인 벡터들로 기저 (basis)를 생성
+  벡터 공간의 차원을 정의하는 데 필수
 ```
 
 - tree
